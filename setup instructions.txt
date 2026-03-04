@@ -1,0 +1,12 @@
+Install uv package manager:
+1.	Open terminal/powershell
+2.	Paste and run this command: curl -LsSf https://astral.sh/uv/install.sh | sh if MacOS/Linux
+3.	Paste and run this command: powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex" if Windows OS
+4.	Check installation : uv --version
+
+Create virtual env:
+1.	uv python install 3.13
+2.	uv venv --python 3.13 .venv
+3.	source .venv/bin/activate for mac/linux 
+	.venv\Scripts\activate for windows
+4.	uv pip install -r requirements.txt
